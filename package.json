@@ -1,0 +1,19 @@
+{
+  "name": "publish-release",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "package": "ncc build index.js -o dist"
+  },
+  "author": "Benoit Daloze",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.1.1",
+    "@actions/github": "^2.1.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.5",
+    "eslint": "^6.3.0"
+  }
+}
