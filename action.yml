@@ -1,4 +1,4 @@
-name: 'publish-release'
+name: 'Publish Release'
 description: 'A GitHub Action to publish a draft release'
 author: 'Benoit Daloze'
 branding:
