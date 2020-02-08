@@ -1,10 +1,13 @@
 name: 'publish-release'
 description: 'A GitHub Action to publish a draft release'
+author: 'Benoit Daloze'
+branding:
+  color: green
+  icon: upload-cloud
 inputs:
   release_id:
     description: 'The ID of the draft release to publish'
     required: true
-
 runs:
   using: 'node12'
   main: 'dist/index.js'
