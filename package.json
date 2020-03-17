@@ -13,7 +13,6 @@
     "@actions/github": "^2.1.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.20.5",
-    "eslint": "^6.3.0"
+    "@zeit/ncc": "^0.20.5"
   }
 }
