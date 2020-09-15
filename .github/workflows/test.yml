@@ -10,3 +10,12 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         release_id: 23503117 # Test Release
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: yarn install
+    - run: yarn run package
+    - name: Check generated files are up to date
+      run: git diff --exit-code
