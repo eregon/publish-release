@@ -1,13 +1,13 @@
 const core = require('@actions/core')
-const { GitHub, context } = require('@actions/github')
+const github = require('@actions/github')
 
 async function main() {
   const release_id = core.getInput('release_id')
 
-  const github = new GitHub(process.env.GITHUB_TOKEN)
-  const { owner, repo } = context.repo
+  const octokit = github.getOctokit(process.env.GITHUB_TOKEN)
+  const { owner, repo } = github.context.repo
 
-  await github.repos.updateRelease({ owner, repo, release_id, draft: false })
+  await octokit.rest.repos.updateRelease({ owner, repo, release_id, draft: false })
   console.log(`Published release with id ${release_id}`)
 }
 
