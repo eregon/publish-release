@@ -50,6 +50,3 @@ jobs:
         release_id: ${{ steps.create_release.outputs.id }}
 
 ```
-
-A complete workflow building on multiple platforms using this approach can be seen
-[here](https://github.com/ruby/ruby-dev-builder/blob/master/.github/workflows/build.yml).
