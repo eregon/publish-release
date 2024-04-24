@@ -53,5 +53,5 @@ jobs:
 
 ## Alternative: gh
 
-Unfortunately, both [actions/create-release](https://github.com/actions/create-release) and [actions/upload-release-asset](https://github.com/actions/upload-release-asset) are archived and using outdated an outdated `node` version.
+Unfortunately, both [actions/create-release](https://github.com/actions/create-release) and [actions/upload-release-asset](https://github.com/actions/upload-release-asset) are archived and using an outdated `node` version.
 A good alternative is to use the `gh` CLI tool available in GitHub Actions, like [here](https://github.com/ruby/ruby-dev-builder/blob/b0bf59a17c17985d4692243d4689c273f6348fa5/.github/workflows/build.yml#L177-L181).
